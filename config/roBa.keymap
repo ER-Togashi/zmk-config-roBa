@@ -80,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                 &kp T                                                           &kp Y        &kp U  &lt 6 I      &kp O    &kp P
-&mt LEFT_ALT A    &kp S         &kp D         &kp F                 &kp G        &kp LS(LG(S))                      &to 1           &kp H        &kp J  &mt RCTRL C  &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &mt LCTRL C   &kp V                 &kp B        &kp INTERNATIONAL_5                &kp INT_HENKAN  &kp N        &kp M  &kp COMMA    &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp A             &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 ESC  &lt 0 SPACE  &lt_to_layer_0 4 INT_MUHENKAN      &kp BACKSPACE   &lt 2 ENTER                               &kp BACKSLASH
+&kp Q             &kp W         &kp E         &kp R                 &kp T                                                 &kp Y        &kp U  &lt 6 I      &kp O    &kp P
+&mt LEFT_ALT A    &kp S         &kp D         &kp F                 &kp G        &kp LS(LG(S))            &to 1           &kp H        &kp J  &mt RCTRL C  &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &mt LCTRL C   &kp V                 &kp B        &kp INTERNATIONAL_5      &kp INT_HENKAN  &kp N        &kp M  &kp COMMA    &kp DOT  &mt RIGHT_SHIFT SLASH
+&none             &kp LEFT_WIN  &lt 4 K_FIND  &lt_to_layer_0 6 ESC  &lt 3 SPACE  &to 7                    &kp BACKSPACE   &lt 2 ENTER                               &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -107,6 +107,17 @@
             >;
         };
 
+        ARROW {
+            bindings = <
+&none   &none   &none   &none   &trans                      &trans    &kp HOME        &kp END       &trans     &trans
+&none   &none   &none   &none   &none   &trans      &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
+&none   &none   &trans  &none   &trans  &trans      &trans  &trans    &trans          &trans        &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                             &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+        };
+
         function {
             bindings = <
 &trans  &trans  &trans  &trans      &trans                      &kp F9  &kp F10  &kp F11  &kp F12  &trans
@@ -114,17 +125,6 @@
 &none   &none   &none   &none       &trans  &trans      &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
 &trans  &trans  &trans  &trans      &trans  &trans      &trans  &trans                             &trans
             >;
-        };
-
-        ARROW {
-            bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
@@ -145,12 +145,12 @@
             >;
         };
 
-        layer_6 {
+        bluetooth {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&kp A   &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &none   &none   &none   &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&none   &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
