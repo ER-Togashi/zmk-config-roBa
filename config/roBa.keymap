@@ -92,7 +92,7 @@
         symbol {
             bindings = <
 &none                             &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp TAB                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &none   &none
-&none                             &kp DOLLAR       &kp PERCENT   &kp CARET             &kp APOS   &none       &trans  &kp LBKT              &kp RBKT               &kp MINUS  &none   &trans
+&trans                            &kp DOLLAR       &kp PERCENT   &kp CARET             &kp APOS   &none       &trans  &kp LBKT              &kp RBKT               &kp MINUS  &none   &trans
 &mt LEFT_SHIFT RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT        &kp HASH              &kp GRAVE  &trans      &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &trans  &trans
 &none                             &none            &none         &trans                &trans     &trans      &trans  &trans                                                          &trans
             >;
