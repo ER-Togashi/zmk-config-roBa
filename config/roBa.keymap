@@ -83,7 +83,7 @@
 &kp Q           &kp W             &kp E         &kp R                 &kp T                                                &kp Y        &kp U  &lt 5 I      &kp O              &kp P
 &mt LEFT_ALT A  &mt LEFT_SHIFT S  &kp D         &kp F                 &kp G        &kp LS(LG(S))         &kp MINUS         &kp H        &kp J  &mt RCTRL K  &mt RIGHT_SHIFT L  &kp SEMICOLON
 &kp Z           &kp X             &mt LCTRL C   &kp V                 &kp B        &lt 1 LANGUAGE_2      &lt 1 LANGUAGE_1  &kp N        &kp M  &kp COMMA    &kp DOT            &kp SLASH
-&none           &kp LEFT_WIN      &lt 7 K_FIND  &lt_to_layer_0 5 ESC  &lt 3 SPACE  &lt 8 N0              &kp BACKSPACE     &lt 2 ENTER                                         &kp BACKSLASH
+&none           &kp LEFT_WIN      &lt 7 K_FIND  &lt_to_layer_0 5 ESC  &lt 3 SPACE  &lt 7 N0              &kp BACKSPACE     &lt 2 ENTER                                         &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
